@@ -4,7 +4,7 @@
     {
       "id": 1,
       "type": 3,
-      "title": "Apache NiFi",
+      "title": "Apache NiFi 1.xx",
       "description": "An easy to use, powerful, and reliable system to process and distribute data.",
       "categories": ["edge"],
       "platform": "linux",
@@ -12,6 +12,19 @@
       "repository": {
         "url": "https://github.com/stig-epb-gmail/docker-templates",
         "stackfile": "edge/apachenifi/docker-compose.yml"
+      }
+    },
+    {
+      "id": 2,
+      "type": 3,
+      "title": "Apache NiFi 2.xx",
+      "description": "An easy to use, powerful, and reliable system to process and distribute data.",
+      "categories": ["edge"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.cdn.digitaloceanspaces.com/logos/anyviz.png",
+      "repository": {
+        "url": "https://github.com/stig-epb-gmail/docker-templates",
+        "stackfile": "edge/apachenifi2/docker-compose.yml"
       }
     }
   ]
