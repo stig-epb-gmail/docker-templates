@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 1,
-      "type": 1,
+      "type": 3,
       "title": "Apache NiFi",
       "description": "An easy to use, powerful, and reliable system to process and distribute data.",
       "categories": ["edge"],
