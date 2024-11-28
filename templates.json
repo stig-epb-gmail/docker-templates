@@ -3,54 +3,15 @@
   "templates": [
     {
       "id": 1,
-      "type": 1,
-      "title": "Registry",
-      "description": "Docker image registry",
-      "categories": ["docker"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
-      "image": "registry:latest",
-      "ports": ["5000/tcp"],
-      "volumes": [
-        {
-          "container": "/var/lib/registry"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "type": 1,
-      "title": "Registry (cache)",
-      "description": "Docker image registry configured as a DockerHub pull through cache",
-      "categories": ["docker"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
-      "image": "registry:latest",
-      "ports": ["5000/tcp"],
-      "volumes": [
-        {
-          "container": "/var/lib/registry"
-        }
-      ],
-      "env": [
-        {
-          "name": "REGISTRY_PROXY_REMOTEURL",
-          "default": "https://registry-1.docker.io",
-          "preset": true
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "type": 3,
-      "title": "Anyviz Cloud Adaptor",
-      "description": "The cloud adapter connects local devices via OPC-UA, Modbus, Siemens, Beckhoff ADS, EtherNet/IP, M-Bus and BACnet to the AnyViz Cloud.",
+      "type": "container",
+      "title": "Apache NiFi",
+      "description": "An easy to use, powerful, and reliable system to process and distribute data.",
       "categories": ["edge"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.cdn.digitaloceanspaces.com/logos/anyviz.png",
       "repository": {
         "url": "https://github.com/stig-epb-gmail/docker-templates",
-        "stackfile": "edge/anyviz/docker-compose.yml"
+        "stackfile": "edge/apachenifi/docker-compose.yml"
       }
     }
   ]
